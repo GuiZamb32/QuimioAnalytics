@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-preto-deep text-branco-text;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-azul-primary hover:bg-azul-light text-white font-medium px-6 py-2.5 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-verde-accent hover:bg-verde-medium text-preto-deep font-medium px-6 py-2.5 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-danger {
+    @apply bg-vermelho-alert hover:bg-vermelho-medium text-white font-medium px-6 py-2.5 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-preto-elevated border border-cinza-dark rounded-xl p-6;
+  }
+  
+  .input-field {
+    @apply bg-preto-pure border border-cinza-dark text-branco-text px-4 py-2.5 rounded-lg focus:outline-none focus:border-azul-primary focus:ring-2 focus:ring-azul-primary/20 transition-all;
+  }
+  
+  .table-header {
+    @apply bg-preto-pure text-cinza-muted font-semibold text-sm uppercase tracking-wide;
+  }
+  
+  .table-row {
+    @apply border-b border-cinza-dark hover:bg-preto-elevated transition-colors;
+  }
+}
